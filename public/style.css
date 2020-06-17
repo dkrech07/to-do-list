@@ -1,0 +1,140 @@
+.wrapper {
+  position: relative;
+  border: 1px solid black;
+  width: 400px;
+  margin: 20px;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.header,
+.main-content,
+.footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-content {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 16px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.header .sort {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.sort li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 25px;
+}
+
+.sort li:hover,
+.tasks-list .task:hover {
+  background: #d7d7d7;
+  cursor: pointer;
+}
+
+.tasks-list {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.tasks-list .task {
+  position: relative;
+  list-style-type: none;
+  display: block;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 20px;
+  margin: 5px;
+}
+
+.task .task-checkbox {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.task .remove {
+  position: absolute;
+  font-size: 0;
+  top: 50%;
+  margin-top: -10px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(img/remove.png);
+  background-position: 0px 2px;
+  background-repeat: no-repeat;
+}
+
+.new-task-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 250px;
+  margin-left: -125px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.all-tasks-info {
+  text-align: right;
+}
+
+.pop-up {
+  border: 1px solid #000000;
+  background-color: #d7d7d7;
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  margin-left: -175px;
+  padding-top: 20px;
+
+}
+
+.pop-up .task-text {
+  width: 80%;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.pop-up-button {
+  width: 135px;
+  height: 25px;
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.save-button {
+  left: 10%;
+}
+
+.cancel-button {
+  right: 10%;
+}
