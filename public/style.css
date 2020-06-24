@@ -78,15 +78,28 @@
 
 .task .remove {
   position: absolute;
-  font-size: 0;
   top: 50%;
-  margin-top: -10px;
   right: 0;
+  margin-top: -10px;
   width: 20px;
   height: 20px;
-  background-image: url(img/remove.png);
-  background-position: 0px 2px;
-  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.task .remove::before, .task .remove::after {
+position: absolute;
+content: ' ';
+height: 20px;
+width: 2px;
+background-color: #333;
+}
+
+.task .remove::before {
+transform: rotate(45deg);
+}
+
+.task .remove::after {
+transform: rotate(-45deg);
 }
 
 .new-task-button {
